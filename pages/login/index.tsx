@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import jwt from 'jsonwebtoken'
+import jwt from 'jsonwebtoken';
+import Link from 'next/link';
 
 const Login = () => {
   const [username, setUsername] = useState<string>('');
@@ -48,6 +49,9 @@ const Login = () => {
         <br />
         <input type="button" value="Login" onClick={submitForm} />
       </form>
+      <Link href="/">
+          <a>Home</a>
+      </Link>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import styles from '../styles/app.module.scss';
+import Link from 'next/link';
 
 //Styled-JSX
 function Heading(props) {
@@ -21,6 +22,9 @@ export default function Home() {
       <Heading heading = "Heading"/>
       <h1 className="blue">H1</h1>
       <h1 className={styles.brown}>H1</h1>
+      <Link href="/login">
+          <a>Login</a>
+      </Link>
     </div>
   )
 }
